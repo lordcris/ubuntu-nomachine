@@ -11,7 +11,7 @@ RUN apt-get install -y  mate-desktop-environment-core mate-desktop-environment m
 
 RUN apt-get install -y wget
 
-RUN wget https://download.nomachine.com/download/6.5/Linux/nomachine_6.5.6_9_amd64.deb -O /nomachine.deb
+RUN wget https://download.nomachine.com/download/6.9/Linux/nomachine_6.9.2_1_amd64.deb -O /nomachine.deb
 
 RUN dpkg -i /nomachine.deb
 
