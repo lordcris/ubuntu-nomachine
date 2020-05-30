@@ -1,7 +1,7 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 
-ENV DEBIAN_FRONTEND=noninteractive
+#ENV DEBIAN_FRONTEND=noninteractive
 
 # Helpers
 RUN apt-get update && apt-get install -y vim xterm pulseaudio cups 
@@ -11,7 +11,7 @@ RUN apt-get install -y  mate-desktop-environment-core mate-desktop-environment m
 
 RUN apt-get install -y wget
 
-RUN wget https://download.nomachine.com/download/6.9/Linux/nomachine_6.9.2_1_amd64.deb -O /nomachine.deb
+RUN wget https://download.nomachine.com/download/6.10/Linux/nomachine_6.10.12_1_amd64.deb
 
 RUN dpkg -i /nomachine.deb
 
